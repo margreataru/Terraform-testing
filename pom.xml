@@ -15,6 +15,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <name>edward_project</name>
+	      <url>http://18.119.117.177:8081/repository/edward_project/</url>
+	    </repository>
+	</distributionManagement>
   <build>
     <finalName>java-tomcat-maven-example</finalName>
     <plugins>

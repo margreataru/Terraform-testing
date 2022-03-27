@@ -4,7 +4,7 @@
   <groupId>com.example</groupId>
   <artifactId>java-tomcat-sample</artifactId>
   <packaging>war</packaging>
-  <version>1.0.1</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>hello Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -15,13 +15,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-<distributionManagement>
-	    <repository>
-	      <id>nexus</id>
-	      <name>edward_project</name>
-	      <url>http://18.119.117.177:8081/repository/edward_project/</url>
-	    </repository>
-	</distributionManagement>
+  <distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>edwardproject</name>
+      <url>http://18.119.117.177:8081/repository/edward_project/</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>snapshots</name>
+      <url>http://18.119.117.177:8081/repository/aravind-snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
   <build>
     <finalName>java-tomcat-maven-example</finalName>
     <plugins>
